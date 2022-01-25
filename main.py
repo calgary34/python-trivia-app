@@ -1,7 +1,7 @@
 import questions
 import random
 
-def trivia():
+while True:
     current_question = random.choice(questions.questions)
     print(current_question['question'])
 
@@ -20,7 +20,3 @@ def trivia():
         print("You answered correctly!")
     else:
         print("Your answer wasn't correct. (womp womp)")
-
-    trivia()
-
-trivia()
